@@ -50,7 +50,7 @@ class ModelTests(TestCase):
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
     def test_create_recipe(self):
-        user = get_user_model().object.create_user(
+        user = get_user_model().objects.create_user(
             'test@exapmle.com',
             'testpass123',
         )
