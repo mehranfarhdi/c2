@@ -134,7 +134,7 @@ class PrivateUserApiTests(TestCase):
         self.assertEqual(res.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
     def test_update_user_profile(self):
-        payload = {'name': 'Update neme', 'password': 'newPassword123'}
+        payload = {'name': 'Update name', 'password': 'newPassword123'}
 
         res = self.client.patch(ME_URL, payload)
 
